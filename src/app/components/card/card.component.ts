@@ -14,6 +14,9 @@ export class CardComponent  implements OnInit {
   @Input() tituloCard!: string;
   @Input() descricaoCard!: string;
 
+  private i = 0;
+  renderizou: boolean | undefined;
+
   news: any[] = [];
   errorMessage: string = '';
 
@@ -23,16 +26,32 @@ export class CardComponent  implements OnInit {
     this.carregaNoticias();
   }
 
+  resumeDescricao(descricao: String): String {
+    if (!descricao || descricao.length <= 100) {
+      return descricao;
+    }
+    return descricao.substring(0, 100) + '...'; 
+  }
+
   carregaNoticias(): void {
     this.apiNoticias.getItems().subscribe({
       next: (data) => {
-        this.news = data;
-      },
-      error: (err) => {
-        this.errorMessage = 'Erro ao carregar os itens';
-        console.error(err);
+      if (data && Array.isArray(data)) {
+        this.news = data.map(item => {
+          return {
+            ...item,
+            body: item.body ? this.resumeDescricao(item.body) : '' 
+          };
+        });
+      } else {
+        this.news = []; 
       }
-    });
-  }
-
+      console.log(this.news);
+    },
+    error: (err) => {
+      this.errorMessage = 'Erro ao carregar os itens';
+      console.error(err);
+    }
+  });
+} 
 }

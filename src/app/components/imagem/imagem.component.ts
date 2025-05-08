@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-imagem',
@@ -7,7 +7,8 @@ import { Component, Input } from '@angular/core';
   templateUrl: './imagem.component.html',
   styleUrl: './imagem.component.css'
 })
-export class ImagemComponent {
+export class ImagemComponent{
   @Input() imageSrc!: string;
   @Input() altText!: string;
+
 }

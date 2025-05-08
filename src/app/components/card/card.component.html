@@ -1,8 +1,12 @@
 @for(item of news; track item){
-    <div class="card">
-        <app-imagem [imageSrc]="item.image"></app-imagem>
-        <h4 class="card-title">{{item.title}}</h4>
-        <p class="card-txt">{{item.body}}</p>
-        <a href="#" class="card-link">Ler mais</a>
-    </div>
+    @if(item.image !== "Invalid faker method - image.image"){
+        <div class="card">
+            <app-imagem [imageSrc]="item.image"></app-imagem>
+            <div class="card-box">
+                <h4 class="card-title">{{item.title}}</h4>
+                <p class="card-txt">{{item.body}}</p>
+                <a href="#" class="card-link">Ler mais</a>
+            </div>
+        </div>
+    }
 }
