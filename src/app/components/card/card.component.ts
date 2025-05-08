@@ -47,6 +47,7 @@ export class CardComponent  implements OnInit {
         this.news = []; 
       }
       console.log(this.news);
+      this.news = [...this.news].reverse()
     },
     error: (err) => {
       this.errorMessage = 'Erro ao carregar os itens';

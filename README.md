@@ -1,59 +1,54 @@
-# TesteTecnico
+# Relatório Teste Técnico
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10.
+## Introdução
 
-## Development server
+Antes de tudo gostaria de agradecer a oportunidade de participar o do teste.
+Nesse documento conterá como sucedeu a tomada de desisão para criar, de maneira coesa, o teste.
 
-To start a local development server, run:
+## Principais Componentes
 
-```bash
-ng serve
-```
+O principais componentes utilizados no app foram:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Card
+- Imagem 
+- Titulo
+- Formulario de Busca
+- Formulario para Cadastrar uma Notícia
+- Home
+- Cadastrar Noticia
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+#### Card
 
-```bash
-ng generate component component-name
-```
+Criado para conter os componentes necessários como a imagem, o titulo, o parágrafo e o link de saiba mais. Esse componente que recebe os dados da API e com uma estrutura de repetição renderiza todos as notícias.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+#### Imagem
 
-```bash
-ng generate --help
-```
+Para adicionar dinamicamente a imagem do card criei esse componente para receber o src vindo da API.
 
-## Building
+#### Titulo
 
-To build the project run:
+Esse componente eu armazenei a estrutura do cabeçalho das páginas.
 
-```bash
-ng build
-```
+#### Formulário de Busca
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Contem a estrutura de formulário para buscar as notícias, entretanto ele não filtra as notícias.
 
-## Running unit tests
+#### Formulário para Cadastrar uma Notícia
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Contem a estrutura HTML necessária para coletar os dados para a criação de uma notícia.
 
-```bash
-ng test
-```
 
-## Running end-to-end tests
+## Principais Services
 
-For end-to-end (e2e) testing, run:
+Services criados para a aplicação:
 
-```bash
-ng e2e
-```
+- API-Noticias
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+#### API-Noticias
 
-## Additional Resources
+Esse service foi criado para armazenar os códigos necessários para consumir a API e seus métodos são:
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. getItems: busca os dados da API
+2. getItemId: busca uma notícia utilizando o ID dela, com isso possui um número inteiro como parâmetro
+3. postItem: envia dados para a API, esse método é utilizado para cadastrar uma notícia
