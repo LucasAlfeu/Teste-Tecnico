@@ -18,3 +18,14 @@
 .item{
     margin-left: 2rem;
 }
+
+.titulo-link{
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+.titulo-link:hover{
+    text-decoration: underline;
+    color: blue;
+}

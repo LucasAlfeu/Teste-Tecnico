@@ -6,7 +6,7 @@ import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-card',
-  imports: [ImagemComponent, CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, ImagemComponent],
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
 })
