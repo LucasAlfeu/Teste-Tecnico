@@ -2,10 +2,11 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ImagemComponent } from '../imagem/imagem.component';
 import { ApiNoticiasService } from '../../services/api-noticias.service';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-card',
-  imports: [ImagemComponent, CommonModule],
+  imports: [ImagemComponent, CommonModule, RouterLink],
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
 })

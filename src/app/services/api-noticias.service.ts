@@ -7,10 +7,15 @@ import { Observable } from 'rxjs';
 })
 export class ApiNoticiasService {
   private apiUrl = 'https://5cf9ae9df26e8c00146cff8d.mockapi.io/api/v1/post';
+  // private urlId = "https://5cf9ae9df26e8c00146cff8d.mockapi.io/api/v1/post/?id="
 
   constructor(private http: HttpClient) { }
 
   getItems(): Observable<any> {
     return this.http.get<any>(this.apiUrl);
+  }
+
+  getItemById(id: number): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/?id=${id}`);
   }
 }
