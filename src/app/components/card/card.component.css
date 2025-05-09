@@ -1,12 +1,13 @@
 .noticias{
     align-items: center;
-    border-right: 1px solid #a0a0a0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     height: calc(100vh - 220px);
     padding: 0;
     scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     overflow-y: auto;
     width: 70vw;
 }
