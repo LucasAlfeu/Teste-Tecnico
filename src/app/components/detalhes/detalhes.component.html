@@ -1,3 +1,7 @@
-<h1>Componente de detalhes</h1>
+<app-titulo></app-titulo>
 
-<p>{{idNoticia}}</p>
+<section class="corpo-detalhes">
+    <img [src]="noticia.image" alt="" class="imagem-noticia">
+    <h1 class="titulo-noticia">{{noticia.title}}</h1>
+    <p class="texto-noticia">{{noticia.body}}</p>
+</section>

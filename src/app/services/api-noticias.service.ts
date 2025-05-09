@@ -15,7 +15,7 @@ export class ApiNoticiasService {
     return this.http.get<any>(this.apiUrl);
   }
 
-  getItemById(id: number): Observable<any> {
-    return this.http.get<any>(`${this.apiUrl}/?id=${id}`);
+  getItemById(id: string): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/${id}`);
   }
 }
