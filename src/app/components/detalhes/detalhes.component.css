@@ -21,3 +21,11 @@
     width: 60vw;
     text-align: justify;
 }
+
+@media (max-width: 1200px){
+    .imagem-noticia{
+        width: 90vw;
+        height: auto;
+        object-fit: contain;
+    }
+}
