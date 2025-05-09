@@ -1,0 +1,23 @@
+.corpo-detalhes{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-noticia{
+    width: 50vw;
+    height: 50vh;
+    margin-bottom: 2rem;
+    object-fit: contain;
+}
+
+.titulo-noticia{
+    font-size: 2.5rem;
+}
+
+.texto-noticia{
+    width: 60vw;
+    text-align: justify;
+}
