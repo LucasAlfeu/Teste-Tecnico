@@ -40,3 +40,15 @@
     text-decoration: none;
     margin: 3rem 0 .5rem;
 }
+
+@media (max-width: 576px){
+    .noticias{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .card{
+        width: 80vw;
+        height: auto;
+    }
+}

@@ -17,3 +17,10 @@
 .resposta-texto {
     color: #a0a0a0;
 }
+
+@media (max-width: 576px){
+    .body-home{
+        flex-direction: column-reverse;
+        overflow-x: hidden;
+    }
+}

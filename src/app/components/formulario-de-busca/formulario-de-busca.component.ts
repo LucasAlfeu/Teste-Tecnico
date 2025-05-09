@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './formulario-de-busca.component.css'
 })
 export class FormularioDeBuscaComponent {
-
+  toggleMenu(){
+    const formulario = document.getElementById('form') as HTMLElement;
+    if (formulario) {
+      formulario.classList.toggle('ativo');
+    } else {
+      console.error('Elemento do menu não encontrado!');
+  }
+  }
 }
