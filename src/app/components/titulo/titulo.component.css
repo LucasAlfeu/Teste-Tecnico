@@ -29,3 +29,20 @@
     text-decoration: underline;
     color: blue;
 }
+
+@media (max-width: 576px) {
+    .cabecalho, .lista{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .titulo{
+        font-size: 2rem;
+    }
+
+    .item{
+        margin: 0;
+    }
+}
