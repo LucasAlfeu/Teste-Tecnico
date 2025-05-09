@@ -1,20 +1,20 @@
 <app-titulo titulo="Cadastrar Notícia"></app-titulo>
 
 <section class="main">
-    <form action="" class="formulario-cadastrar">
+    <form action="" class="formulario-cadastrar" (submit)="criaNoticia()">
         <div class="box">
             <label for="titulo">Título da noticia:</label>
-            <input type="text" name="noticia-titulo" id="titulo" aria-placeholder="Titulo da Noticia">
+            <input type="text" name="noticia-titulo" id="titulo" [(ngModel)]="novaNoticia.title" aria-placeholder="Titulo da Noticia" required>
         </div>
 
         <div class="box">
             <label for="imagem-noticia">Adicionar link da imagem:</label>
-            <input type="text" id="imagem-noticia" name="img-noticia" aria-placeholder="link da imagem">
+            <input type="text" id="imagem-noticia" name="img-noticia" [(ngModel)]="novaNoticia.image" aria-placeholder="link da imagem" required>
         </div>    
 
         <div class="box">
             <label for="descricao">Adicione o corpo da notícia:</label>
-            <textarea name="noticia-descricao" id="descricao" rows="8" cols="60" aria-placeholder="Descrição completa da notícia"></textarea>
+            <textarea name="noticia-descricao" id="descricao" rows="8" cols="60" [(ngModel)]="novaNoticia.body" aria-placeholder="Descrição completa da notícia" required></textarea>
         </div>
 
         <div class="box-btn">
