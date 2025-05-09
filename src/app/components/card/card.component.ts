@@ -30,7 +30,7 @@ export class CardComponent  implements OnInit {
     if (!descricao || descricao.length <= 100) {
       return descricao;
     }
-    return descricao.substring(0, 100) + '...'; 
+    return descricao.substring(0, 80) + '...'; 
   }
 
   carregaNoticias(): void {

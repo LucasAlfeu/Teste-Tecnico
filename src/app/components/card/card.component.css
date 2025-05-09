@@ -1,10 +1,24 @@
+.noticias{
+    align-items: center;
+    border-right: 1px solid #a0a0a0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: calc(100vh - 220px);
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    width: 70vw;
+}
+
 .card{
     border: 1px solid #a0a0a0;
     border-radius: 0 0 5px 5px;
     display: flex;
     flex-direction: column;
-    margin: 3rem;
-    max-width: 450px;
+    margin: 0 3rem 3rem;
+    width: 450px;
+    height: 565px;
 }
 
 .card-box{

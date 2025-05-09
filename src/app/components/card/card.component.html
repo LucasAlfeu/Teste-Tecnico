@@ -1,4 +1,5 @@
-@for(item of news; track item){
+<div class="noticias">
+    @for(item of news; track item){
     @if(item.image !== "Invalid faker method - image.image"){
         <div class="card">
             <app-imagem [imageSrc]="item.image"></app-imagem>
@@ -10,3 +11,4 @@
         </div>
     }
 }
+</div>
