@@ -1,21 +1,24 @@
 <app-titulo></app-titulo>
 
+<section class="main">
+    <form action="" class="formulario-cadastrar">
+        <div class="box">
+            <label for="titulo">Título da noticia:</label>
+            <input type="text" name="noticia-titulo" id="titulo" aria-placeholder="Titulo da Noticia">
+        </div>
 
+        <div class="box">
+            <label for="imagem-noticia">Adicionar link da imagem:</label>
+            <input type="text" id="imagem-noticia" name="img-noticia" aria-placeholder="link da imagem">
+        </div>    
 
-<form action="" class="formulario-cadastrar">
-    <div class="box">
-        <label for="titulo">Título da noticia:</label>
-        <input type="text" name="noticia-titulo" id="titulo" aria-placeholder="Titulo da Noticia">
-    </div>
-    <div class="box">
-        <label for="descricao">Adicione o corpo da notícia:</label>
-        <textarea name="noticia-descricao" id="descricao" aria-placeholder="Descrição completa da notícia"></textarea>
-    </div>
-    <div class="box">
-        <label for="imagem">Adicionar link da imagem:</label>
-        <input type="text" id="imagem-noticia" name="img-noticia" aria-placeholder="link da imagem">
-    </div>
-    <div class="box-btn">
-        <input type="submit" value="Cadastrar" class="btn-form" aria-placeholder="Botão para cadastrar notícia">
-    </div>
-</form>
+        <div class="box">
+            <label for="descricao">Adicione o corpo da notícia:</label>
+            <textarea name="noticia-descricao" id="descricao" rows="8" cols="60" aria-placeholder="Descrição completa da notícia"></textarea>
+        </div>
+
+        <div class="box-btn">
+            <input type="submit" value="Cadastrar" class="btn-form" aria-placeholder="Botão para cadastrar notícia">
+        </div>
+    </form>
+</section>

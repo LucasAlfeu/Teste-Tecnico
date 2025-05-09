@@ -1,0 +1,41 @@
+.main{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.formulario-cadastrar{
+    border: 1px solid #a7a7a7;
+    padding: 2rem;
+    width: 30vw;
+}
+
+.box{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+#titulo, #imagem-noticia, #descricao{
+    border-radius: 3px;
+    padding: .4rem .2rem;
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.btn-form{
+    background-color: #4169e1;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 700;
+    padding: .3rem 0;
+    width: 7rem;
+}
+
+.btn-form:hover{
+    border: 1px solid #000;
+    cursor: pointer;
+}
