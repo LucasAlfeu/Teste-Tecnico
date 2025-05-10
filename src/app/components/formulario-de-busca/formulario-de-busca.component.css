@@ -79,16 +79,21 @@
         right: 1.5rem;
     }
 
+    .box-btn{
+        display: flex;
+        justify-content: flex-end;
+        width: 100vw;
+    }
+
     .btn-menu{
         background: transparent;
         border: none;
-        cursor: pointer;
-        display: flex;
-        font-size: 1rem;
-        justify-content: flex-end;
+        cursor: pointer; 
+        display: flex;       
+        font-size: 1rem;        
         margin-bottom: 1rem;
+        margin-right: 1rem;
         padding: .5rem 1rem;
-        width: 100vw;
     }
 
     #hamburguer{

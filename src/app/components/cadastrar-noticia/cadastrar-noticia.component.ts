@@ -37,7 +37,7 @@ export class CadastrarNoticiaComponent {
         
         setTimeout(() => {
           this.router.navigate(['/']);
-        }, 500);
+        }, 300);
       },
       error: (err) => {
         this.mensagemError = 'Erro ao criar item. Por favor, tente novamente.';
