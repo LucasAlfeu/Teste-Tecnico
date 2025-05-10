@@ -103,6 +103,7 @@ e após o cadastramento da notícia a aplicação te redireciona para a página 
 
 Novamente agradeço a oportunidade, tentei ser o mais fiel possível ao layout que foi proposto e espero que 
 o resultado tenha sido satisfatório e que eu tenha cumprido todos os requisitos necessário.
+Para em ajudar na organização de como proceder na codificação, utilizei o [GitHub Projects](https://github.com/users/LucasAlfeu/projects/7).
 
 ## Autor
 
